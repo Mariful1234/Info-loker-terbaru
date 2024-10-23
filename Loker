@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Lowongan Kerja</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        header marquee {
+            color: #fff; /* Warna teks */
+            font-size: 24px; /* Ukuran teks */
+            font-weight: bold; /* Ketebalan teks */
+            padding: 10px 0; /* Padding atas dan bawah */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex; /* Menampilkan menu secara horizontal */
+            justify-content: center; /* Menyelaraskan menu ke tengah */
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Jarak antar item menu */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .search, .categories, .job-listings, .newsletter, .faq, .testimonials, .reviews {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-post {
+            padding: 20px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+
+        .stars {
+            cursor: pointer;
+            font-size: 30px;
+            color: #ffcc00; /* Warna bintang */
+        }
+
+        .star {
+            transition: color 0.2s;
+        }
+
+        .star:hover {
+            color: #ffa500; /* Warna saat hover */
+        }
+
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .job-post {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <marquee behavior="scroll" direction="left">
+            <h1>Info Lowongan Kerja - Temukan Pekerjaan Impian Anda di Sini!</h1>
+        </marquee>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Kategori</a></li>
+                <li><a href="#">Kontak</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search">
+            <form action="#" method="GET">
+                <input type="text" name="search" placeholder="Cari lowongan..." required>
+                <button type="submit">Cari</button>
+            </form>
+        </section>
+
+        <section class="categories">
+            <h3>Kategori</h3>
+            <ul>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">Pemasaran</a></li>
+                <li><a href="#">Keuangan</a></li>
+                <li><a href="#">Sumber Daya Manusia</a></li>
+                <li><a href="https://www.jobstreet.co.id" target="_blank">JobStreet</a></li>
+                <li><a href="https://www.karir.com" target="_blank">Karir.com</a></li>
+            </ul>
+        </section>
+
+        <section class="job-listings">
+            <h3>Lowongan Pekerjaan Terbaru</h3>
+            <article class="job-post">
+                <h2>Posisi: [Nama Posisi]</h2>
+                <p><strong>Perusahaan:</strong> [Nama Perusahaan]</p>
+                <p><strong>Lokasi:</strong> [Lokasi]</p>
+                <p><strong>Deskripsi:</strong> [Deskripsi Singkat]</p>
+                <a href="[Link Detail]">Baca Selengkapnya</a>
+            </article>
+            <!-- Tambahkan lebih banyak artikel lowongan di sini -->
+        </section>
+
+        <section class="newsletter">
+            <h3>Daftar untuk Newsletter</h3>
+            <form action="#" method="POST">
+                <input type="email" name="email" placeholder="Masukkan email Anda" required>
+                <button type="submit">Daftar</button>
+            </form>
+        </section>
+
+        <section class="faq">
+            <h3>FAQ</h3>
+            <h4>Apa itu Info Loker?</h4>
+            <p>Info Loker adalah platform yang menyediakan informasi terkini mengenai lowongan kerja.</p>
+        </section>
+
+        <section class="testimonials">
+            <h3>Apa Kata Mereka</h3>
+            <blockquote>"Saya menemukan pekerjaan impian saya di sini! Terima kasih, Info Loker!"</blockquote>
+            <cite>- Nama Pengguna | <a href="https://www.example.com" target="_blank">Baca Tips Kami</a></cite>
+        </section>
+
+        <section class="reviews">
+            <h3>Ulasan Pengguna</h3>
+            <div class="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p id="rating-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Info Loker. Semua Hak Dilindungi.</p>
+        <p>Email: info@yourdomain.com</p>
+        <p><a href="https://www.bni.co.id/en-us/Personal/Financial-Planning" target="_blank">Perencanaan Keuangan</a></p>
+        <p><a href="https://www.example.com/privacy" target="_blank">Kebijakan Privasi</a></p>
+        <p><a href="https://www.example.com/contact" target="_blank">Hubungi Kami</a></p>
+    </footer>
+
+    <script>
+        // Menangani pencarian lowongan
+        document.querySelector('.search form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const searchTerm = document.querySelector('input[name="search"]').value.toLowerCase();
+            const jobPosts = document.querySelectorAll('.job-post');
+
+            jobPosts.forEach(function(post) {
+                const title = post.querySelector('h2').textContent.toLowerCase();
+                const description = post.querySelector('p').textContent.toLowerCase();
+
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    post.style.display = 'block'; // Tampilkan jika sesuai
+                } else {
+                    post.style.display = 'none'; // Sembunyikan jika tidak sesuai
+                }
+            });
+        });
+
+        // Ulasan bintang
+        const stars = document.querySelectorAll('.star');
+        const ratingMessage = document.getElementById('rating-message');
+
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                const rating = this.getAttribute('data-value');
+                ratingMessage.textContent = `Anda memberi rating: ${rating} bintang`;
+
+                // Tandai bintang yang dipilih
+                stars.forEach(star => {
+                    star.style.color = '#ccc'; // Reset warna bintang
+                });
+
+                for (let i = 0; i < rating; i++) {
+                    stars[i].style.color = '#ffcc00'; // Warna bintang yang dipilih
+                }
+            });
+        });
+
+        // Menangani pengiriman newsletter
+        document.querySelector('.newsletter form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.querySelector('input[name="email"]').value;
+            alert(`Terima kasih! Anda telah mendaftar dengan email: ${email}`);
+            // Anda dapat menambahkan logika untuk menyimpan email di sini
+        });
+    </script>
+</body>
+</html>
